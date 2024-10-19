@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>Cuenta Bancaria</h1>
+    <form id="formulario">
+        <label>INGRESAR TITULAR:</label>
+        <input type="text" id="titular" required>
+        <br>
+        <label>INGRESAR SALDO:</label>
+        <input type="number" id="saldo" required>
+        <br>
+        <label>DEPOSITO:</label>
+        <input type="number" id="deposito">
+        <br>
+        <label>RETIRO:</label>
+        <input type="number" id="retiro">
+        <br>
+        <button type="submit" onclick="realizarDeposito(event)">VER DEPOSITO</button>
+        <button type="submit" onclick="realizarRetiro(event)">VER RETIRO</button>
+        <button type="submit" onclick="verSaldo(event)">VER SALDO ACTUAL</button>
+    </form>
+
+    <div id="resultado"></div>
+
+
+    <script src="banco.js"></script>
+</body>
+</html>
